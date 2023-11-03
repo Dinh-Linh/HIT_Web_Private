@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hv {
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+}
+
+.chuH {
+    display: flex;
+    align-items: center;
+}
+
+.chuT {
+    display: flex;
+}
+
+.so4 .cl1 .cl2 {
+    display: flex;
+}
+
+.so4 {
+    display: flex;
+}
