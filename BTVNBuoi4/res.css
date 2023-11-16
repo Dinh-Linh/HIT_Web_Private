@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 13px;
+        max-width: 480px;
+    }
+
+    .banner {
+        width: 480px;
+        position: relative;
+    }
+
+    .banner>.box>.introduction {
+        font-size: 18px;
+        position: absolute;
+        top: 10vh;
+        left: 4vh;
+        line-height: 25px;
+    }
+
+    .logo>i {
+        display: none;
+    }
+
+    .about>.work {
+        max-width: 480px;
+        flex-wrap: wrap;
+    }
+
+    .skill>.list {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        left: 4vh;
+    }
+
+    .skill>.list>.note {
+        width: 400px;
+    }
+
+    .service>.list {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        left: 0;
+    }
+
+    .service>.list>.container {
+        width: 90%;
+    }
+
+    .service>.list>.container>.anh {
+        display: none;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "sidebar content content"
+            "sidebar footer footer";
+    }
+
+    .header {
+        grid-area: header;
+        background-color: antiquewhite;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: aquamarine;
+    }
+
+    .content {
+        grid-area: content;
+        background-color: beige;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: yellowgreen;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        body {
+            background-color: lightblue;
+        }
+
+        .container {
+            /* display: none; */
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="content">content</div>
+        <div class="footer">footer</div>
+    </div>
+    <!-- grid area set theo content -->
+    <!-- grid-rows: 1/span 2: Bắt đầu từ line thứ 1 chiếm 2 dòng. Tương tự như column -->
+</body>
+
+</html>
