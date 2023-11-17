@@ -4,7 +4,54 @@
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+        max-width: 1024px;
+    }
+
+    .banner {
+        width: 100%;
+        position: relative;
+    }
+
+    .banner>.box>.introduction {
+        font-size: 20px;
+        position: absolute;
+        top: 20vh;
+        left: 20vh;
+        line-height: 35px;
+    }
+
+    .about {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .about>.work>.level {
+        margin: 0 20px;
+    }
+
+    .about>.work>.level>.inf>ul>li {
+        width: 50%;
+    }
+
+    .service>.list>.container {
+        width: 50%;
+        position: relative;
+    }
+
+    .service>.list>.container>p {
+        width: 400px;
+    }
+
+    .service>.list>.container>.anh {
+        position: absolute;
+        left: -40px;
+        top: -5px;
+    }
+
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     body {
@@ -13,7 +60,7 @@
     }
 
     .banner {
-        width: 480px;
+        width: 100%;
         position: relative;
     }
 
@@ -27,6 +74,16 @@
 
     .logo>i {
         display: none;
+    }
+
+
+
+    .about>.work>.level {
+        width: 100%;
+    }
+
+    .about>.work>.level>.inf>ul>li {
+        width: 50%;
     }
 
     .about>.work {
@@ -50,13 +107,32 @@
         flex-wrap: wrap;
         position: relative;
         left: 0;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .service>.list>.container {
-        width: 90%;
+        width: 100%;
+        position: relative;
     }
 
     .service>.list>.container>.anh {
-        display: none;
+        position: absolute;
+        left: -70px;
+        top: -5px;
+    }
+
+
+    .form {
+        position: relative;
+    }
+
+    .form>.form1>.nam {
+        width: 220px;
+    }
+
+    .form>button {
+        position: absolute;
+        left: 0;
     }
 }
