@@ -135,4 +135,22 @@
         position: absolute;
         left: 0;
     }
+
+    .contact>.nd {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact>.nd>.pos {
+        width: 400px;
+    }
+
+    .contact>.nd>.pos>.form>.form1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    button {
+        margin-left: 10vh;
+    }
 }
