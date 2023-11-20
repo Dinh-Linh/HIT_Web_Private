@@ -66,18 +66,18 @@ header>.shopping>i {
     position: relative;
 }
 
-.menu>ul>.menuLv2>ul {
+.menu>ul>.menuLv2>.appear {
     list-style: none;
     position: absolute;
     bottom: -60px;
     width: 200px;
     height: 50px;
+    display: none;
 }
 
 .menuLv2>ul>li {
     background-color: rgb(58, 181, 74);
     padding: 10px 0;
-    /* display: none; */
 }
 
 .menu>ul>.menuLv2:hover .appear {
