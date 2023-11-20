@@ -24,6 +24,7 @@ header>.search>input {
     padding: 20px;
 }
 
+
 header>.search>i {
     padding: 12px;
     margin-left: -5px;
@@ -42,6 +43,11 @@ header>.shopping>i {
     justify-content: center;
     align-items: center;
     margin: 0 10px;
+    border-radius: 10px;
+}
+
+.shopping-content {
+    font-size: 16px;
 }
 
 .menu>ul {
@@ -101,11 +107,9 @@ header>.shopping>i {
     flex-wrap: wrap;
     gap: 20px;
     margin-left: 30px;
-
 }
 
 .content>.product>img {
-
     width: 300px;
     height: 300px;
 }
