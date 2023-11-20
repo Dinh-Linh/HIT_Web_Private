@@ -21,7 +21,12 @@ header>.logo>img {
 header>.search>input {
     width: 300px;
     height: 30px;
-    padding-right: 20px;
+    padding: 20px;
+}
+
+header>.search>i {
+    padding: 12px;
+    margin-left: -5px;
 }
 
 header>.shopping {
