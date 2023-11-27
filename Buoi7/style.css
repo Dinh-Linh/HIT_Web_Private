@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding: 12px 24px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+header>.menu {
+    display: flex;
+}
+
+
+header>.menu>li:last-child {
+    position: relative;
+}
+
+header>.menu>li:last-child:hover .menulv2 {
+    display: block;
+}
+
+header>.menu>li:last-child>.menulv2 {
+    position: absolute;
+    width: 150px;
+    padding: 10px 0;
+    background-color: black;
+    display: none
+}
+
+header>.menu>li:last-child>.menulv2>p {
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+}
+
+header>.menu {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>.menu>li {
+    list-style: none;
+    /* width: 100px; */
+}
+
+.banner>img {
+    width: 100%;
+    height: 800px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner>.textOfimg {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#band {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10vh 0;
+    line-height: 30px;
+}
+
+#band>h3 {
+    margin: 15px auto;
+    font-style: italic;
+
+}
+
+#band>.flbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.flbox>.product>img {
+    width: 150px;
+    height: 150px;
+}
+
+#tour {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sptour>#tour>h1,
+.sptour>#tour>h3 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sptour {
+    background-color: black;
+    color: white;
+    height: 800px;
+}
+
+.sptour>#tour>.date>li>span {
+    background-color: red;
+    color: white;
+    padding: 4px 6px;
+    margin-left: 30px;
+}
+
+.sptour>#tour>.date>li:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .sptour>#tour>.date>li:last-child>p {
+    width: 20px;
+    height: 20px;
+} */
+
+#tour>.date>li {
+    list-style: none;
+    width: 100%;
+    padding: 15px 15px;
+    border-bottom: 1px solid black;
+    background-color: white;
+    color: black;
+
+}
+
+/* :required trong thẻ input  */
+#tour>.place {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tour>.place>.where {
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 388px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+#tour>.place>.where>img {
+    width: 250px;
+    height: 183px;
+}
+
+#tour>.place>.where>.where-inf {
+    margin-left: 15px;
+    line-height: 30px;
+}
+
+#tour>.place>.where>img:hover {
+    filter: brightness(0.6);
+}
+
+#tour>.place>.where>.where-inf>button {
+    width: 100px;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+}
+
+#contact {
+    max-width: 768px;
+    margin: 100px auto;
+}
+
+#contact>.intr {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#contact>.contact-inf {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact>.contact-inf>.inf1,
+.inf2 {
+    width: 400px;
+}
+
+.last-banner>img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(70deg, rgb(177, 238, 130), rgb(206, 223, 16), rgb(230, 170, 58));
+    }
+
+    .hehe {
+        position: relative;
+    }
+
+    .haha {
+        display: flex;
+    }
+
+    button {
+        /* position: absolute; */
+        margin: 0 20px;
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    .hehe button {
+        position: absolute;
+    }
+
+    .hehe button:last-child {
+        display: none;
+    }
+
+    .hehe:hover button:last-child {
+        display: block;
+    }
+</style>
+
+<body>
+    <p>Will you marry me :3</p>
+    <div class="haha">
+        <button>Yes</button>
+        <div class="hehe">
+            <button>No</button>
+            <button>Yes</button>
+        </div>
+    </div>
+
+    <!-- <input type="text" type="button" placeholder="hihihaha"> -->
+
+</body>
+
+</html>
