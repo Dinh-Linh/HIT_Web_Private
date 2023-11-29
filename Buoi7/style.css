@@ -18,6 +18,10 @@ header {
     width: 100%;
 }
 
+.headerResp {
+    display: none;
+}
+
 header>.menu {
     display: flex;
 }
