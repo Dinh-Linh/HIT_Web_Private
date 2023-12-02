@@ -245,4 +245,14 @@ header>.menu>li {
 footer {
     text-align: center;
     margin: 20px 0;
+    font-size: 24px;
+}
+
+footer>.icon>i {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+footer>.icon>i:hover {
+    opacity: 0.4;
 }
