@@ -105,4 +105,14 @@
         line-height: 40px;
         margin: 20px 0;
     }
+
+    footer {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 15px;
+    }
+
+    footer>.icon>i {
+        margin: 0 5px;
+    }
 }
