@@ -2,64 +2,54 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="main.js">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<style>
-    body {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(70deg, rgb(177, 238, 130), rgb(206, 223, 16), rgb(230, 170, 58));
-    }
-
-    .hehe {
-        position: relative;
-    }
-
-    .haha {
-        display: flex;
-    }
-
-    button {
-        /* position: absolute; */
-        margin: 0 20px;
-        width: 100px;
-        height: 50px;
-        font-size: 15px;
-        border-radius: 10px;
-    }
-
-    .hehe button {
-        position: absolute;
-    }
-
-    .hehe button:last-child {
-        display: none;
-    }
-
-    .hehe:hover button:last-child {
-        display: block;
-    }
-</style>
-
 <body>
-    <p>Will you marry me :3</p>
-    <div class="haha">
-        <button>Yes</button>
-        <div class="hehe">
-            <button>No</button>
-            <button>Yes</button>
-        </div>
+    <div class="slider">
+        <div class="slide" style="background-color: antiquewhite;">Slide 1</div>
+        <div class="slide" style="background-color: blueviolet">Slide 2</div>
+        <div class="slide" style="background-color: pink">Slide 3</div>
+
     </div>
-
-    <!-- <input type="text" type="button" placeholder="hihihaha"> -->
-
+    <div class="box1">sdfs</div>
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
 </body>
+<script>
+    let slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+    let interval;
+
+    function showSlide(index) {
+        // Ẩn tất cả các slide
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('active');
+        }
+
+        // Hiển thị slide tại vị trí index
+        slides[index].classList.add('active');
+    }
+
+    function startSlider() {
+        interval = setInterval(() => {
+            currentIndex++;
+            if (currentIndex >= slides.length) {
+                currentIndex = 0;
+            }
+            showSlide(currentIndex);
+        }, 2000); // Thay đổi khoảng thời gian tại đây (đơn vị: milliseconds)
+    }
+
+    function stopSlider() {
+        clearInterval(interval);
+    }
+
+    // Bắt đầu slider tự động khi trang được tải
+    startSlider();
+</script>
 
 </html>
