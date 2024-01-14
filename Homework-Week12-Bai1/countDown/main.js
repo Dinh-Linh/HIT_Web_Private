@@ -1,4 +1,3 @@
-
 var countDownDate = new Date("Aug 18, 2024 00:00:00").getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();

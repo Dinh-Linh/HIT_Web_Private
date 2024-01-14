@@ -1,4 +1,3 @@
-const form = document.getElementById("formId");
 const email = document.getElementById('email');
 const pass = document.getElementById('password');
 const but = document.getElementById('sign-in');
